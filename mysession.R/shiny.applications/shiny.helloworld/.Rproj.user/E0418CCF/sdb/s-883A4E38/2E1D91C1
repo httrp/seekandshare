@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "###########################################################################\n#\n# runApp.R (Launch WebApp)\n# \n# You can launch the WebApp by using this script. (Starter)\n#\n# Project: shiny.helloworld\n# Author: Dominik Hattrup (dominik@hattrup.eu)\n# Date: 2016 May 14\n#\n###########################################################################\n\nrunApp(\"../shiny.helloworld\", display.mode = \"showcase\") # mit Script\nrunApp(\"../shiny.helloworld\", display.mode = \"normal\") # ohne Script\n#?runApp\n",
+    "created" : 1464093491401.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2638341689",
+    "id" : "2E1D91C1",
+    "lastKnownWriteTime" : 1464101490,
+    "last_content_update" : 1464101490793,
+    "path" : "~/Projects/seekandshare/mysession.R/shiny.applications/shiny.helloworld/runApp.R",
+    "project_path" : "runApp.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
