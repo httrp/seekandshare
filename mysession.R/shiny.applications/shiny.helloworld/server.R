@@ -1,23 +1,37 @@
+###########################################################################
+#
+# server.R (user interface)
+# 
+# This is the server logic for a Shiny web application. (Backend)
+#
+# Project: shiny.helloworld
+# Author: Dominik Hattrup (dominik@hattrup.eu)
+# Date: 2016 May 14
+#
+###########################################################################
 
-# This is the server logic for a Shiny web application.
-# You can find out more about building applications with Shiny here:
-#
-# http://shiny.rstudio.com
-#
+
+# load packages -----------------------------------------------------------
 
 library(shiny)
 
+# server logic ------------------------------------------------------------
+
 shinyServer(function(input, output) {
 
+  # Expression that generates a histogram. The expression is
+  # wrapped in a call to renderPlot to indicate that:
+  #
+  #  1) It is "reactive" and therefore should re-execute automatically
+  #     when inputs change
+  #  2) Its output type is a plot
+  
   output$distPlot <- renderPlot({
-
-    # generate bins based on input$bins from ui.R
-    x    <- faithful[, 2]
+    x    <- faithful[, 2]  # Old Faithful Geyser data
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
-
+    
     # draw the histogram with the specified number of bins
     hist(x, breaks = bins, col = 'darkgray', border = 'white')
-
   })
 
 })
