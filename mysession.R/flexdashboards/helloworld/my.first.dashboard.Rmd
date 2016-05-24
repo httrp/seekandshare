@@ -1,0 +1,42 @@
+---
+title: "My first super flexible dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Geile Viz
+
+Hier schreibe ich einfach Text rein!
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Legende
+
+Hier könnte die *Legende* stehen.
+
+```{r}
+
+```
+
+### Contact
+
+Und hier vielleicht meine *Kontaktdetails*
+
+```{r}
+
+```
+
