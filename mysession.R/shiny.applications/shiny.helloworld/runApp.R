@@ -10,6 +10,13 @@
 #
 ###########################################################################
 
+
+# load necessary packages -------------------------------------------------
+
+library(shiny)
+
+# run app -----------------------------------------------------------------
+
 runApp("../shiny.helloworld", display.mode = "showcase") # mit Script
 runApp("../shiny.helloworld", display.mode = "normal") # ohne Script
 #?runApp
